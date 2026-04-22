@@ -160,6 +160,7 @@ function renderQuestionImage(question) {
   const image = document.createElement("img");
   image.src = imageUrl;
   image.alt = mapItem?.label || question.prompt;
+  image.className = "question-image";
   image.loading = "lazy";
   image.decoding = "async";
   image.addEventListener("error", () => {
