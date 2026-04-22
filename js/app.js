@@ -121,12 +121,11 @@ function createOptionButton(questionId, option) {
   button.setAttribute("data-question-id", questionId);
   button.setAttribute("data-option-id", option.id);
 
-  const imageWrap = buildImageWrap(option);
   const label = document.createElement("span");
   label.textContent = option.text;
   label.className = "fw-semibold";
 
-  button.append(imageWrap, label);
+  button.append(label);
 
   button.addEventListener("click", () => {
     const allButtons = ui.optionsContainer.querySelectorAll(".option-button");
@@ -139,50 +138,55 @@ function createOptionButton(questionId, option) {
   return button;
 }
 
-function buildImageWrap(option) {
-  const wrap = document.createElement("span");
-  wrap.className = "option-image-wrap";
-
-  const mapItem = option.assetId ? state.imageMap[option.assetId] : null;
-  const imageUrl = mapItem?.url?.trim?.() ?? "";
-
-  if (imageUrl) {
-    const image = document.createElement("img");
-    image.src = imageUrl;
-    image.alt = mapItem.label || option.text;
-    wrap.appendChild(image);
-  } else {
-    const fallback = document.createElement("span");
-    fallback.className = "option-fallback";
-    fallback.textContent = (mapItem?.label || option.text).slice(0, 2).toUpperCase();
-    wrap.appendChild(fallback);
-  }
-
-  return wrap;
-}
-
 function renderQuestionImage(question) {
   const container = ui.questionImageContainer;
   container.innerHTML = "";
+  container.classList.remove("d-none");
 
-  if (!question.assetId) {
-    container.classList.add("d-none");
+  const resolvedAssetId = resolveQuestionAssetId(question);
+  if (!resolvedAssetId) {
+    renderQuestionImagePlaceholder(container, "Question");
     return;
   }
 
-  const mapItem = state.imageMap[question.assetId];
+  const mapItem = state.imageMap[resolvedAssetId];
   const imageUrl = mapItem?.url?.trim?.() ?? "";
 
   if (!imageUrl) {
-    container.classList.add("d-none");
+    renderQuestionImagePlaceholder(container, mapItem?.label || resolvedAssetId);
     return;
   }
 
   const image = document.createElement("img");
   image.src = imageUrl;
   image.alt = mapItem?.label || question.prompt;
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.addEventListener("error", () => {
+    renderQuestionImagePlaceholder(container, mapItem?.label || resolvedAssetId);
+  });
   container.appendChild(image);
-  container.classList.remove("d-none");
+}
+
+function resolveQuestionAssetId(question) {
+  if (question.assetId) {
+    return question.assetId;
+  }
+
+  const correctOption = question.options.find((option) => option.isCorrect);
+  if (correctOption?.assetId) {
+    return correctOption.assetId;
+  }
+
+  return null;
+}
+
+function renderQuestionImagePlaceholder(container, label) {
+  container.innerHTML = "";
+  const fallback = document.createElement("span");
+  fallback.className = "question-image-fallback";
+  fallback.textContent = `Imagen: ${label}`;
+  container.appendChild(fallback);
 }
 
 function onNextQuestion() {
