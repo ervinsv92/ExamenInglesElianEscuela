@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>English Quest - Clima, estaciones y ropa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="quiz-body">
+    <main class="container py-3 py-md-4">
+      <section class="card shadow-sm border-0 mx-auto quiz-card">
+        <div class="card-body p-3 p-md-4">
+          <header class="mb-3 mb-md-4">
+            <p class="text-uppercase small text-secondary fw-semibold mb-1">Fourth Grade</p>
+            <h1 class="h4 mb-2">English Quest</h1>
+            <p class="text-secondary mb-0">
+              Practica <strong>weather</strong>, <strong>seasons</strong> y <strong>clothes</strong>.
+              Responde una pregunta por vez.
+            </p>
+          </header>
+
+          <section id="loadingState" class="text-center py-4">
+            <div class="spinner-border text-primary mb-3" role="status" aria-hidden="true"></div>
+            <p class="mb-0">Cargando juego...</p>
+          </section>
+
+          <section id="errorState" class="d-none alert alert-danger" role="alert"></section>
+
+          <section id="quizState" class="d-none">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge rounded-pill text-bg-primary" id="roundBadge">Ronda 1</span>
+              <span class="text-secondary small" id="progressText"></span>
+            </div>
+
+            <div class="progress mb-3" role="progressbar" aria-label="Progreso">
+              <div
+                id="progressBar"
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 0%"
+              ></div>
+            </div>
+
+            <article class="question-panel mb-3">
+              <p class="question-label mb-2 text-uppercase small text-secondary fw-semibold">
+                Question
+              </p>
+              <div id="questionImageContainer" class="question-image-wrap d-none mb-2"></div>
+              <h2 id="questionText" class="h5 mb-0"></h2>
+            </article>
+
+            <div id="optionsContainer" class="vstack gap-2"></div>
+
+            <div class="d-grid mt-3">
+              <button id="nextButton" type="button" class="btn btn-primary btn-lg" disabled>
+                Siguiente
+              </button>
+            </div>
+          </section>
+
+          <section id="roundSummaryState" class="d-none text-center py-2">
+            <h2 class="h5 mb-2">Fin de ronda</h2>
+            <p id="roundSummaryText" class="mb-3"></p>
+            <div class="d-grid">
+              <button id="startReinforcementButton" type="button" class="btn btn-warning btn-lg">
+                Empezar ronda de refuerzo
+              </button>
+            </div>
+          </section>
+
+          <section id="finalState" class="d-none text-center py-2">
+            <h2 class="h4 mb-2">Excelente</h2>
+            <p id="finalSummaryText" class="mb-3"></p>
+            <div id="historyContainer" class="text-start small mb-3"></div>
+            <div class="d-grid">
+              <button id="restartButton" type="button" class="btn btn-success btn-lg">
+                Jugar de nuevo
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "weather_sunny": { "label": "Sunny", "url": "" },
+  "weather_rainy": { "label": "Rainy", "url": "" },
+  "weather_windy": { "label": "Windy", "url": "" },
+  "weather_cloudy": { "label": "Cloudy", "url": "" },
+  "weather_snowy": { "label": "Snowy", "url": "" },
+  "weather_stormy": { "label": "Stormy", "url": "" },
+  "weather_cold": { "label": "Cold", "url": "" },
+  "weather_hot": { "label": "Hot", "url": "" },
+
+  "season_summer": { "label": "Summer", "url": "" },
+  "season_spring": { "label": "Spring", "url": "" },
+  "season_fall": { "label": "Fall", "url": "" },
+  "season_winter": { "label": "Winter", "url": "" },
+
+  "clothes_raincoat": { "label": "Raincoat", "url": "" },
+  "clothes_tshirt": { "label": "T-shirt", "url": "" },
+  "clothes_shirt": { "label": "Shirt", "url": "" },
+  "clothes_pants": { "label": "Pants", "url": "" },
+  "clothes_sneakers": { "label": "Sneakers", "url": "" },
+  "clothes_sweater": { "label": "Sweater", "url": "" },
+  "clothes_scarf": { "label": "Scarf", "url": "" },
+  "clothes_boots": { "label": "Boots", "url": "" },
+  "clothes_shorts": { "label": "Shorts", "url": "" },
+  "clothes_sandals": { "label": "Sandals", "url": "" },
+  "clothes_hat": { "label": "Hat", "url": "" }
+}

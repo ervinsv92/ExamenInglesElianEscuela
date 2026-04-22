@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "title": "English Quest",
+    "description": "Practice weather, seasons and clothes.",
+    "language": "en",
+    "shuffleQuestions": true,
+    "shuffleOptions": true
+  },
+  "questions": [
+    {
+      "id": "q_oral_weather_today",
+      "group": "oral_exam",
+      "prompt": "How is the weather today?",
+      "options": [
+        { "id": "o1", "text": "Today is cloudy.", "isCorrect": true, "assetId": "weather_cloudy" },
+        { "id": "o2", "text": "I like summer.", "isCorrect": false, "assetId": "season_summer" },
+        { "id": "o3", "text": "I wear boots.", "isCorrect": false, "assetId": "clothes_boots" },
+        { "id": "o4", "text": "My favorite is winter.", "isCorrect": false, "assetId": "season_winter" }
+      ]
+    },
+    {
+      "id": "q_oral_favorite_season",
+      "group": "oral_exam",
+      "prompt": "What's your favorite season?",
+      "options": [
+        { "id": "o1", "text": "I like summer.", "isCorrect": true, "assetId": "season_summer" },
+        { "id": "o2", "text": "It's stormy.", "isCorrect": false, "assetId": "weather_stormy" },
+        { "id": "o3", "text": "I wear pants.", "isCorrect": false, "assetId": "clothes_pants" },
+        { "id": "o4", "text": "Today is snowy.", "isCorrect": false, "assetId": "weather_snowy" }
+      ]
+    },
+    {
+      "id": "q_oral_least_season",
+      "group": "oral_exam",
+      "prompt": "What's your least favorite season?",
+      "options": [
+        { "id": "o1", "text": "I don't like winter.", "isCorrect": true, "assetId": "season_winter" },
+        { "id": "o2", "text": "I wear sandals.", "isCorrect": false, "assetId": "clothes_sandals" },
+        { "id": "o3", "text": "It's windy.", "isCorrect": false, "assetId": "weather_windy" },
+        { "id": "o4", "text": "Today is hot.", "isCorrect": false, "assetId": "weather_hot" }
+      ]
+    },
+    {
+      "id": "q_oral_clothes_summer",
+      "group": "oral_exam",
+      "prompt": "What are your favorite clothes to wear in summer?",
+      "options": [
+        { "id": "o1", "text": "I like to wear sandals, shorts and a t-shirt.", "isCorrect": true },
+        { "id": "o2", "text": "I like to wear boots, scarf and sweater.", "isCorrect": false },
+        { "id": "o3", "text": "It is rainy and stormy.", "isCorrect": false, "assetId": "weather_rainy" },
+        { "id": "o4", "text": "My favorite season is fall.", "isCorrect": false, "assetId": "season_fall" }
+      ]
+    },
+    {
+      "id": "q_oral_clothes_winter",
+      "group": "oral_exam",
+      "prompt": "What are your favorite clothes to wear in winter?",
+      "options": [
+        { "id": "o1", "text": "I like to wear boots, scarf and sweater.", "isCorrect": true },
+        { "id": "o2", "text": "I like to wear sandals and shorts.", "isCorrect": false },
+        { "id": "o3", "text": "It's sunny and hot.", "isCorrect": false, "assetId": "weather_hot" },
+        { "id": "o4", "text": "I don't like spring.", "isCorrect": false, "assetId": "season_spring" }
+      ]
+    },
+
+    {
+      "id": "q_weather_sunny",
+      "group": "weather",
+      "assetId": "weather_sunny",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "sunny", "isCorrect": true, "assetId": "weather_sunny" },
+        { "id": "o2", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
+        { "id": "o3", "text": "hat", "isCorrect": false, "assetId": "clothes_hat" },
+        { "id": "o4", "text": "cloudy", "isCorrect": false, "assetId": "weather_cloudy" }
+      ]
+    },
+    {
+      "id": "q_weather_rainy",
+      "group": "weather",
+      "assetId": "weather_rainy",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "rainy", "isCorrect": true, "assetId": "weather_rainy" },
+        { "id": "o2", "text": "spring", "isCorrect": false, "assetId": "season_spring" },
+        { "id": "o3", "text": "boots", "isCorrect": false, "assetId": "clothes_boots" },
+        { "id": "o4", "text": "stormy", "isCorrect": false, "assetId": "weather_stormy" }
+      ]
+    },
+    {
+      "id": "q_weather_windy",
+      "group": "weather",
+      "assetId": "weather_windy",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "windy", "isCorrect": true, "assetId": "weather_windy" },
+        { "id": "o2", "text": "summer", "isCorrect": false, "assetId": "season_summer" },
+        { "id": "o3", "text": "scarf", "isCorrect": false, "assetId": "clothes_scarf" },
+        { "id": "o4", "text": "cold", "isCorrect": false, "assetId": "weather_cold" }
+      ]
+    },
+    {
+      "id": "q_weather_cloudy",
+      "group": "weather",
+      "assetId": "weather_cloudy",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "cloudy", "isCorrect": true, "assetId": "weather_cloudy" },
+        { "id": "o2", "text": "fall", "isCorrect": false, "assetId": "season_fall" },
+        { "id": "o3", "text": "shirt", "isCorrect": false, "assetId": "clothes_shirt" },
+        { "id": "o4", "text": "sunny", "isCorrect": false, "assetId": "weather_sunny" }
+      ]
+    },
+    {
+      "id": "q_weather_snowy",
+      "group": "weather",
+      "assetId": "weather_snowy",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "snowy", "isCorrect": true, "assetId": "weather_snowy" },
+        { "id": "o2", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
+        { "id": "o3", "text": "raincoat", "isCorrect": false, "assetId": "clothes_raincoat" },
+        { "id": "o4", "text": "hot", "isCorrect": false, "assetId": "weather_hot" }
+      ]
+    },
+    {
+      "id": "q_weather_stormy",
+      "group": "weather",
+      "assetId": "weather_stormy",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "stormy", "isCorrect": true, "assetId": "weather_stormy" },
+        { "id": "o2", "text": "spring", "isCorrect": false, "assetId": "season_spring" },
+        { "id": "o3", "text": "pants", "isCorrect": false, "assetId": "clothes_pants" },
+        { "id": "o4", "text": "rainy", "isCorrect": false, "assetId": "weather_rainy" }
+      ]
+    },
+    {
+      "id": "q_weather_cold",
+      "group": "weather",
+      "assetId": "weather_cold",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "cold", "isCorrect": true, "assetId": "weather_cold" },
+        { "id": "o2", "text": "fall", "isCorrect": false, "assetId": "season_fall" },
+        { "id": "o3", "text": "sweater", "isCorrect": false, "assetId": "clothes_sweater" },
+        { "id": "o4", "text": "windy", "isCorrect": false, "assetId": "weather_windy" }
+      ]
+    },
+    {
+      "id": "q_weather_hot",
+      "group": "weather",
+      "assetId": "weather_hot",
+      "prompt": "What weather is this?",
+      "options": [
+        { "id": "o1", "text": "hot", "isCorrect": true, "assetId": "weather_hot" },
+        { "id": "o2", "text": "summer", "isCorrect": false, "assetId": "season_summer" },
+        { "id": "o3", "text": "shorts", "isCorrect": false, "assetId": "clothes_shorts" },
+        { "id": "o4", "text": "snowy", "isCorrect": false, "assetId": "weather_snowy" }
+      ]
+    },
+
+    {
+      "id": "q_season_summer",
+      "group": "seasons",
+      "assetId": "season_summer",
+      "prompt": "What season is this?",
+      "options": [
+        { "id": "o1", "text": "summer", "isCorrect": true, "assetId": "season_summer" },
+        { "id": "o2", "text": "sunny", "isCorrect": false, "assetId": "weather_sunny" },
+        { "id": "o3", "text": "boots", "isCorrect": false, "assetId": "clothes_boots" },
+        { "id": "o4", "text": "spring", "isCorrect": false, "assetId": "season_spring" }
+      ]
+    },
+    {
+      "id": "q_season_spring",
+      "group": "seasons",
+      "assetId": "season_spring",
+      "prompt": "What season is this?",
+      "options": [
+        { "id": "o1", "text": "spring", "isCorrect": true, "assetId": "season_spring" },
+        { "id": "o2", "text": "rainy", "isCorrect": false, "assetId": "weather_rainy" },
+        { "id": "o3", "text": "hat", "isCorrect": false, "assetId": "clothes_hat" },
+        { "id": "o4", "text": "winter", "isCorrect": false, "assetId": "season_winter" }
+      ]
+    },
+    {
+      "id": "q_season_fall",
+      "group": "seasons",
+      "assetId": "season_fall",
+      "prompt": "What season is this?",
+      "options": [
+        { "id": "o1", "text": "fall", "isCorrect": true, "assetId": "season_fall" },
+        { "id": "o2", "text": "cloudy", "isCorrect": false, "assetId": "weather_cloudy" },
+        { "id": "o3", "text": "shirt", "isCorrect": false, "assetId": "clothes_shirt" },
+        { "id": "o4", "text": "summer", "isCorrect": false, "assetId": "season_summer" }
+      ]
+    },
+    {
+      "id": "q_season_winter",
+      "group": "seasons",
+      "assetId": "season_winter",
+      "prompt": "What season is this?",
+      "options": [
+        { "id": "o1", "text": "winter", "isCorrect": true, "assetId": "season_winter" },
+        { "id": "o2", "text": "cold", "isCorrect": false, "assetId": "weather_cold" },
+        { "id": "o3", "text": "scarf", "isCorrect": false, "assetId": "clothes_scarf" },
+        { "id": "o4", "text": "fall", "isCorrect": false, "assetId": "season_fall" }
+      ]
+    },
+
+    {
+      "id": "q_clothes_raincoat",
+      "group": "clothes",
+      "assetId": "clothes_raincoat",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "raincoat", "isCorrect": true, "assetId": "clothes_raincoat" },
+        { "id": "o2", "text": "stormy", "isCorrect": false, "assetId": "weather_stormy" },
+        { "id": "o3", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
+        { "id": "o4", "text": "shirt", "isCorrect": false, "assetId": "clothes_shirt" }
+      ]
+    },
+    {
+      "id": "q_clothes_tshirt",
+      "group": "clothes",
+      "assetId": "clothes_tshirt",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "t-shirt", "isCorrect": true, "assetId": "clothes_tshirt" },
+        { "id": "o2", "text": "sunny", "isCorrect": false, "assetId": "weather_sunny" },
+        { "id": "o3", "text": "spring", "isCorrect": false, "assetId": "season_spring" },
+        { "id": "o4", "text": "pants", "isCorrect": false, "assetId": "clothes_pants" }
+      ]
+    },
+    {
+      "id": "q_clothes_shirt",
+      "group": "clothes",
+      "assetId": "clothes_shirt",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "shirt", "isCorrect": true, "assetId": "clothes_shirt" },
+        { "id": "o2", "text": "cloudy", "isCorrect": false, "assetId": "weather_cloudy" },
+        { "id": "o3", "text": "fall", "isCorrect": false, "assetId": "season_fall" },
+        { "id": "o4", "text": "hat", "isCorrect": false, "assetId": "clothes_hat" }
+      ]
+    },
+    {
+      "id": "q_clothes_pants",
+      "group": "clothes",
+      "assetId": "clothes_pants",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "pants", "isCorrect": true, "assetId": "clothes_pants" },
+        { "id": "o2", "text": "windy", "isCorrect": false, "assetId": "weather_windy" },
+        { "id": "o3", "text": "summer", "isCorrect": false, "assetId": "season_summer" },
+        { "id": "o4", "text": "boots", "isCorrect": false, "assetId": "clothes_boots" }
+      ]
+    },
+    {
+      "id": "q_clothes_sneakers",
+      "group": "clothes",
+      "assetId": "clothes_sneakers",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "sneakers", "isCorrect": true, "assetId": "clothes_sneakers" },
+        { "id": "o2", "text": "hot", "isCorrect": false, "assetId": "weather_hot" },
+        { "id": "o3", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
+        { "id": "o4", "text": "sandals", "isCorrect": false, "assetId": "clothes_sandals" }
+      ]
+    },
+    {
+      "id": "q_clothes_sweater",
+      "group": "clothes",
+      "assetId": "clothes_sweater",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "sweater", "isCorrect": true, "assetId": "clothes_sweater" },
+        { "id": "o2", "text": "cold", "isCorrect": false, "assetId": "weather_cold" },
+        { "id": "o3", "text": "spring", "isCorrect": false, "assetId": "season_spring" },
+        { "id": "o4", "text": "shirt", "isCorrect": false, "assetId": "clothes_shirt" }
+      ]
+    },
+    {
+      "id": "q_clothes_scarf",
+      "group": "clothes",
+      "assetId": "clothes_scarf",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "scarf", "isCorrect": true, "assetId": "clothes_scarf" },
+        { "id": "o2", "text": "snowy", "isCorrect": false, "assetId": "weather_snowy" },
+        { "id": "o3", "text": "fall", "isCorrect": false, "assetId": "season_fall" },
+        { "id": "o4", "text": "raincoat", "isCorrect": false, "assetId": "clothes_raincoat" }
+      ]
+    },
+    {
+      "id": "q_clothes_boots",
+      "group": "clothes",
+      "assetId": "clothes_boots",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "boots", "isCorrect": true, "assetId": "clothes_boots" },
+        { "id": "o2", "text": "rainy", "isCorrect": false, "assetId": "weather_rainy" },
+        { "id": "o3", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
+        { "id": "o4", "text": "sneakers", "isCorrect": false, "assetId": "clothes_sneakers" }
+      ]
+    },
+    {
+      "id": "q_clothes_shorts",
+      "group": "clothes",
+      "assetId": "clothes_shorts",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "shorts", "isCorrect": true, "assetId": "clothes_shorts" },
+        { "id": "o2", "text": "sunny", "isCorrect": false, "assetId": "weather_sunny" },
+        { "id": "o3", "text": "summer", "isCorrect": false, "assetId": "season_summer" },
+        { "id": "o4", "text": "pants", "isCorrect": false, "assetId": "clothes_pants" }
+      ]
+    },
+    {
+      "id": "q_clothes_sandals",
+      "group": "clothes",
+      "assetId": "clothes_sandals",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "sandals", "isCorrect": true, "assetId": "clothes_sandals" },
+        { "id": "o2", "text": "hot", "isCorrect": false, "assetId": "weather_hot" },
+        { "id": "o3", "text": "spring", "isCorrect": false, "assetId": "season_spring" },
+        { "id": "o4", "text": "boots", "isCorrect": false, "assetId": "clothes_boots" }
+      ]
+    },
+    {
+      "id": "q_clothes_hat",
+      "group": "clothes",
+      "assetId": "clothes_hat",
+      "prompt": "What clothes item is this?",
+      "options": [
+        { "id": "o1", "text": "hat", "isCorrect": true, "assetId": "clothes_hat" },
+        { "id": "o2", "text": "windy", "isCorrect": false, "assetId": "weather_windy" },
+        { "id": "o3", "text": "fall", "isCorrect": false, "assetId": "season_fall" },
+        { "id": "o4", "text": "shirt", "isCorrect": false, "assetId": "clothes_shirt" }
+      ]
+    }
+  ]
+}
