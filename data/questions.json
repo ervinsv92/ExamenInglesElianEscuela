@@ -43,6 +43,7 @@
     {
       "id": "q_oral_clothes_summer",
       "group": "oral_exam",
+      "assetId": "season_summer",
       "prompt": "What are your favorite clothes to wear in summer?",
       "options": [
         { "id": "o1", "text": "I like to wear sandals, shorts and a t-shirt.", "isCorrect": true },
@@ -54,6 +55,7 @@
     {
       "id": "q_oral_clothes_winter",
       "group": "oral_exam",
+      "assetId": "season_winter",
       "prompt": "What are your favorite clothes to wear in winter?",
       "options": [
         { "id": "o1", "text": "I like to wear boots, scarf and sweater.", "isCorrect": true },
