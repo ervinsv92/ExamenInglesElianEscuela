@@ -67,11 +67,11 @@
       "id": "q_weather_sunny",
       "group": "weather",
       "assetId": "weather_sunny",
-      "prompt": "What weather is this?",
+      "prompt": "Look at the picture. What weather is this?",
       "options": [
         { "id": "o1", "text": "sunny", "isCorrect": true, "assetId": "weather_sunny" },
-        { "id": "o2", "text": "winter", "isCorrect": false, "assetId": "season_winter" },
-        { "id": "o3", "text": "hat", "isCorrect": false, "assetId": "clothes_hat" },
+        { "id": "o2", "text": "rainy", "isCorrect": false, "assetId": "weather_rainy" },
+        { "id": "o3", "text": "windy", "isCorrect": false, "assetId": "weather_windy" },
         { "id": "o4", "text": "cloudy", "isCorrect": false, "assetId": "weather_cloudy" }
       ]
     },
