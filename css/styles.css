@@ -21,11 +21,13 @@ body.quiz-body {
   border: 1px solid #e5edf9;
   border-radius: 0.85rem;
   padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .question-image-wrap {
   width: 100%;
-  height: clamp(180px, 48vw, 280px);
+  height: clamp(130px, 36vw, 220px);
   border-radius: 0.85rem;
   background: #ffffff;
   border: 1px solid #dbe7ff;
@@ -84,6 +86,10 @@ body.quiz-body {
 @media (min-width: 768px) {
   .question-panel {
     padding: 1rem;
+  }
+
+  .question-image-wrap {
+    height: clamp(170px, 28vw, 260px);
   }
 
   .option-button {
